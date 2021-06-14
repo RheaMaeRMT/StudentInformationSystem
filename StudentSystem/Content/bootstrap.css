@@ -37,6 +37,20 @@ footer{
 h4 {
     text-align: center;
 }
+.card-body {
+    position: center;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: transparent;
+    background-clip: border-box;
+    border: 2px solid #000;
+    border-radius: 0.25rem;
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+
 .card {
     position: relative;
     display: flex;
@@ -48,7 +62,9 @@ h4 {
     border: 2px solid #000;
     border-radius: 0.25rem;
 }
-
+.justify-content-center {
+    justify-content: center !important;
+}
 .row {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
@@ -151,8 +167,8 @@ textarea {
   margin: 0;
   font: inherit;
   color: inherit;
-
 }
+
 button {
   overflow: visible;
 }
@@ -177,7 +193,7 @@ input::-moz-focus-inner {
   border: 0;
 }
 input {
-  line-height: normal;
+  line-height:30px;
 }
 input[type="checkbox"],
 input[type="radio"] {
@@ -207,6 +223,7 @@ fieldset {
     background-color:#f6f498;
     text-align:center;
 }
+
 legend {
     padding: 2px;
     border: 2px dotted red;

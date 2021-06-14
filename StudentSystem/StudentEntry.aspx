@@ -53,7 +53,7 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <asp:Label ID="LblGender" runat="server" Text="Gender:"></asp:Label>
-                            <asp:DropDownList ID="DDLGender" runat="server" Width="267px" Height="27px">
+                            <asp:DropDownList ID="DDLGender" runat="server" Width="284px" Height="31px">
                                 <asp:ListItem> </asp:ListItem> 
                                 <asp:ListItem> Male </asp:ListItem>
                                 <asp:ListItem> Female </asp:ListItem>
@@ -64,7 +64,7 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <asp:Label ID="LblNum" runat="server" Text="Phone Number:"></asp:Label>
-                            <asp:TextBox ID="txtNum" runat="server" Width="267px"></asp:TextBox>
+                            <asp:TextBox ID="txtNum" runat="server" Width="260px"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RFVNum" runat="server" ErrorMessage="*"  CssClass="auto-style1" ControlToValidate="txtNum"></asp:RequiredFieldValidator>
                         </div>
                     </div>
@@ -249,8 +249,8 @@
                             <asp:TextBox ID="txtSeniorYear" runat="server" Width="285px"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RFVSeniorYear" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtSeniorYear"></asp:RequiredFieldValidator>
                         </div>
-                    </div>
-                </div>
+                    </div> 
+                </div> 
             </fieldset>
         </div>
         <br />
