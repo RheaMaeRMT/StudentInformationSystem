@@ -8,42 +8,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> Student Information System</title>
 
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
     <asp:ContentPlaceHolder ID="head" runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:ContentPlaceHolder>
 
-
-    <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
+    <style>
+        body{
+            background-color:#8cdd92;
+        }
+        h1{
+            text-align:center;
+            color:white;
+            width:1000px;
+        }
+    </style>
 </head>
-<body style="background-color:#8cdd92">
-    <form runat="server">
-      
+<body>
+   <form runat="server">
+     <div class="container-fluid">
        <!--Navigation-->
+       <nav class="navbar navbar-expand-lg navbar-dark    " id="mainNav">
         <div class="navbar navbar-inverse navbar-fixed-top bg-dark navbar-custom">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="Homepage.aspx">Student Information System</a>
+                 <h1>STUDENT &nbsp;INFORMATION &nbsp; SYSTEM</h1>      
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="StudentEntry.aspx">Student Entry</a></li>
-                        <li><a runat="server" href="CourseEntry.aspx">Course Entry</a></li>
-                        <li><a runat="server" href="InstructorEntry.aspx">Instructor Entry </a></li>
-                        <li><a runat="server" href="Enrollment.aspx">Enrollment</a></li>
+                        <li><a runat="server" href="Homepage.aspx">HOMEPAGE</a></li>
+                        <li><a runat="server" href="StudentEntry.aspx">STUDENT</a></li>
+                        <li><a runat="server" href="InstructorEntry.aspx">INSTRUCTOR</a></li>
+                        <li><a runat="server" href="CourseEntry.aspx">COURSE</a></li>
+                        <li><a runat="server" href="Enrollment.aspx">ENROLLMENT</a></li>
 
                     </ul>
                 </div>
             </div>
         </div>
+      </nav>
         <!-- Main Content Placeholder-->
-        <div class="container body-content">
+        <div>
             <asp:ContentPlaceHolder ID="BodyContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
@@ -55,7 +62,7 @@
                 <p>&copy; <%: DateTime.Now.Year %> - Student Information System by Trinidad, Rhea Mae A.</p>
             </footer>
 
-
-    </form>
+     </div>
+   </form>
 </body>
 </html>

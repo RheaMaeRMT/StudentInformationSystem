@@ -196,7 +196,7 @@
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <asp:Label ID="LblSsem" runat="server" Width="100px">&nbsp;&nbsp;Semester:</asp:Label>
-                                <asp:DropDownList ID="DDLSem" runat="server" Width="649px" Height="30px">
+                                <asp:DropDownList ID="DDLSem" runat="server" Width="649px" Height="39px">
                                     <asp:ListItem>Select</asp:ListItem>
                                     <asp:ListItem> First Semester</asp:ListItem>
                                     <asp:ListItem> Second Semester</asp:ListItem>
@@ -209,7 +209,7 @@
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <asp:Label ID="LblSched" runat="server" Width="100px">&nbsp;&nbsp;Schedule:</asp:Label>
-                                <asp:DropDownList ID="DDLSched" runat="server" Width="630px" Height="34px">
+                                <asp:DropDownList ID="DDLSched" runat="server" Width="630px" Height="39px">
                                     <asp:ListItem> Select </asp:ListItem>
                                     <asp:ListItem> Day</asp:ListItem>
                                     <asp:ListItem> Evening</asp:ListItem>
@@ -232,14 +232,6 @@
                         </div>
                   </div>
                 </div> 
-                <div class="row">
-                 </div>
-                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="form-group">
-                        </div>
-                    </div>
-                </div>
             </fieldset>
         </div> <br />
         <div class="card-footer text-center">

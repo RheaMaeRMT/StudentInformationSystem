@@ -295,15 +295,15 @@ th {
     page-break-after: avoid;
   }
   .navbar {
-    display: none;
+    display:block;
   }
   .btn > .caret,
   .dropup > .btn > .caret {
     border-top-color: #000 !important;
   }
-  .label {
-    border: 1px solid #000;
-  }
+    .label {
+        border: 1px solid #000;
+    }
   .table {
     border-collapse: collapse !important;
   }
@@ -1320,7 +1320,14 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 36px;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Monaco";
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top:3px;
+    margin-bottom:0;
 }
 h2,
 .h2 {
@@ -1328,7 +1335,9 @@ h2,
 }
 h3,
 .h3 {
-  font-size: 24px;
+    font-size: 20px;
+    font-family: Verdana, sans-serif;
+    margin-left:120px;
 }
 h4,
 .h4 {
@@ -1481,11 +1490,11 @@ ul ol,
 ol ol {
   margin-bottom: 0;
 }
-li{
-    margin-left:5px;
-    margin-right:5px;
-    font-size:medium;
-
+li {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size:larger;
+    color:DodgerBlue;
 }
 
 .list-unstyled {
@@ -4083,7 +4092,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   height: 1px;
   margin: 9px 0;
   overflow: hidden;
-  background-color: #e5e5e5;
+  background-color: #fff703;
 }
 .nav > li > a > img {
   max-width: none;
@@ -4427,17 +4436,19 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 @media (min-width: 768px) {
-  .navbar-nav {
-    float: left;
-    margin: 0;
-  }
-  .navbar-nav > li {
-    float: left;
-  }
-  .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
+    .navbar-nav {
+        float: left;
+        margin: 0;
+
+    }
+    .navbar-nav > li {
+        float: left;
+    }
+        .navbar-nav > li > a {
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+        }
 }
 .navbar-form {
   padding: 10px 15px;
@@ -5423,7 +5434,7 @@ a.list-group-item-success.active:hover,
 button.list-group-item-success.active:hover,
 a.list-group-item-success.active:focus,
 button.list-group-item-success.active:focus {
-  color: #fff;
+  color: DodgerBlue;
   background-color: #3c763d;
   border-color: #3c763d;
 }

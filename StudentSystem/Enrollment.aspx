@@ -136,12 +136,6 @@
                             </div>
                         </div>
                       </div> 
-                           <div class="row"> 
-                                <asp:Label ID="Label2" runat="server">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:Label>                               
-                                <asp:Label ID="LblDesc" runat="server" Text="Description:"></asp:Label>
-                                <asp:TextBox ID="txtDesc" runat="server" Width="568px"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RFVDesc" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtDesc"></asp:RequiredFieldValidator>
-                            </div>
                  <br />
                     <div class="row">
                         <div class="col-md-4">
@@ -170,6 +164,17 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                            <asp:Label ID="LblAcadYr" runat="server">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Academic Year:</asp:Label>
+                            <asp:DropDownList ID="DDLAcadYr" runat="server" Height="39px" Width="600px">
+                                 <asp:ListItem> Select </asp:ListItem>
+                            </asp:DropDownList>
+                            <asp:RequiredFieldValidator ID="RFVAcadYr" runat="server" ErrorMessage="*" InitialValue="Select" ControlToValidate="DDLAcadYr" CssClass="auto-style1"></asp:RequiredFieldValidator>
+                        </div>
+                    </div>
+                  </div> 
              </fieldset>
          </div>
         <br />
