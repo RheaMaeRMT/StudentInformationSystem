@@ -463,184 +463,22 @@ namespace StudentSystem {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
         
         /// <summary>
-        /// LblELem control.
+        /// LblSchool control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblELem;
+        protected global::System.Web.UI.WebControls.Label LblSchool;
         
         /// <summary>
-        /// txtElem control.
+        /// txtSchool control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtElem;
-        
-        /// <summary>
-        /// RFVElem control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVElem;
-        
-        /// <summary>
-        /// LblElemAdd control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblElemAdd;
-        
-        /// <summary>
-        /// txtElemAd control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtElemAd;
-        
-        /// <summary>
-        /// RFVElemAdd control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVElemAdd;
-        
-        /// <summary>
-        /// LblYear control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblYear;
-        
-        /// <summary>
-        /// txtYear control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtYear;
-        
-        /// <summary>
-        /// RFVYear control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVYear;
-        
-        /// <summary>
-        /// LblSec control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblSec;
-        
-        /// <summary>
-        /// TxtSec control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtSec;
-        
-        /// <summary>
-        /// RFVSec control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVSec;
-        
-        /// <summary>
-        /// LblSecAdd control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblSecAdd;
-        
-        /// <summary>
-        /// txtSecAdd control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSecAdd;
-        
-        /// <summary>
-        /// RFVSecAdd control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVSecAdd;
-        
-        /// <summary>
-        /// LblSecYear control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblSecYear;
-        
-        /// <summary>
-        /// txtSecYear control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSecYear;
-        
-        /// <summary>
-        /// RFVSecYear control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVSecYear;
-        
-        /// <summary>
-        /// LblSenior control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblSenior;
-        
-        /// <summary>
-        /// txtSenior control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSenior;
+        protected global::System.Web.UI.WebControls.TextBox txtSchool;
         
         /// <summary>
         /// RFVSenior control.
@@ -652,22 +490,22 @@ namespace StudentSystem {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVSenior;
         
         /// <summary>
-        /// LblSeniorAdd control.
+        /// LblSchoolAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblSeniorAdd;
+        protected global::System.Web.UI.WebControls.Label LblSchoolAdd;
         
         /// <summary>
-        /// txtSeniorAdd control.
+        /// txtSchoolAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSeniorAdd;
+        protected global::System.Web.UI.WebControls.TextBox txtSchoolAdd;
         
         /// <summary>
         /// RFVSeniorAdd control.
@@ -679,31 +517,31 @@ namespace StudentSystem {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVSeniorAdd;
         
         /// <summary>
-        /// LblSeniorYear control.
+        /// LblGrad control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblSeniorYear;
+        protected global::System.Web.UI.WebControls.Label LblGrad;
         
         /// <summary>
-        /// txtSeniorYear control.
+        /// txtGrad control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSeniorYear;
+        protected global::System.Web.UI.WebControls.TextBox txtGrad;
         
         /// <summary>
-        /// RFVSeniorYear control.
+        /// RFVGrad control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVSeniorYear;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVGrad;
         
         /// <summary>
         /// BttnSubmit control.
@@ -713,14 +551,5 @@ namespace StudentSystem {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BttnSubmit;
-        
-        /// <summary>
-        /// BttnClear control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BttnClear;
     }
 }

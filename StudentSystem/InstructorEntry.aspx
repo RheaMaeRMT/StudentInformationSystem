@@ -1,10 +1,14 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="InstructorEntry.aspx.cs" Inherits="StudentSystem.InstructorEntry" %>
 
+
 <asp:Content ID="BodyContent" ContentPlaceHolderID="head" runat="server">
 
     <style type="text/css">
         .auto-style1 {
             color: #FF0000;
+        }
+        .auto-style2 {
+            margin-left:10px;
         }
         </style>
 
@@ -16,7 +20,7 @@
     <section>
         <div class="card">
             <fieldset>
-               <legend style="text-align:left">INSTRUCTOR INFORMATION</legend>
+               <legend style="text-align:left">&nbsp;INSTRUCTOR INFORMATION</legend>
                    <div class="row"> 
                     <div class="col-md-4"> 
                         <div class="form-group">
@@ -24,9 +28,6 @@
                             <asp:TextBox ID="txtIDNo" runat="server" Width="267px" Height="28px"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RFVIDno" runat="server" ErrorMessage="*" ControlToValidate="txtIDNo" CssClass="auto-style1" ></asp:RequiredFieldValidator>                        
                         </div>
-                    </div>
-                    <div class="row">                    
-                        <asp:Button class="btn btn-primary btn-lg" ID="BttnSearch" runat="server" Text="SEARCH" Height="40px" Width="120px" />
                     </div>
                    </div>
                 <div class="row"> 
@@ -56,8 +57,10 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <asp:Label ID="LblGender" runat="server" Text="Gender:"></asp:Label>
-                            <asp:DropDownList ID="DDLGender" runat="server" Width="267px" Height="27px">
-                                <asp:ListItem> </asp:ListItem>
+                            <asp:DropDownList ID="DDLGender" runat="server" Width="284px" Height="31px">
+                                <asp:ListItem>Select </asp:ListItem> 
+                                <asp:ListItem> Male </asp:ListItem>
+                                <asp:ListItem> Female </asp:ListItem>
                             </asp:DropDownList>
                             <asp:RequiredFieldValidator ID="RFVGender" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="DDLGender"></asp:RequiredFieldValidator>
                         </div>
@@ -65,7 +68,7 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <asp:Label ID="LblNum" runat="server" Text="Phone Number:"></asp:Label>
-                            <asp:TextBox ID="txtNum" runat="server" Width="267px"></asp:TextBox>
+                            <asp:TextBox ID="txtNum" runat="server" Width="260px"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RFVNum" runat="server" ErrorMessage="*"  CssClass="auto-style1" ControlToValidate="txtNum"></asp:RequiredFieldValidator>
                         </div>
                     </div>
@@ -88,101 +91,98 @@
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <asp:Label ID="LblAddress" runat="server" Text="Address:"></asp:Label>
-                            <asp:TextBox ID="txtAddress" runat="server" Width="267px"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RFVAddress" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtAddress"></asp:RequiredFieldValidator>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
                             <asp:Label ID="LblStat" runat="server" Text="Civil Status:"></asp:Label>
                             <asp:DropDownList ID="DDLStat" runat="server" Width="267px" Height="27px">
-                                <asp:ListItem> </asp:ListItem>
+                                <asp:ListItem> Select </asp:ListItem> 
+                                <asp:ListItem> Single </asp:ListItem>
+                                <asp:ListItem> Married </asp:ListItem>
                             </asp:DropDownList>                           
-                            <asp:RequiredFieldValidator ID="RFVStat" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="DDLStat"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="RFVStat" runat="server" ErrorMessage="*" InitialValue="Select" CssClass="auto-style1" ControlToValidate="DDLStat"></asp:RequiredFieldValidator>
                         </div>
                     </div>
-
                 </div>
             </fieldset>
-        </div> 
-    </section>
-    <br />
-    <section>
-         <div class="card"> 
-             <fieldset>
-                  <legend style="text-align:left">COURSE INFORMATION</legend>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <asp:Label ID="LblDept" runat="server" Text="College/Dept:"></asp:Label>
-                                <asp:DropDownList ID="DDLDept" runat="server" Height="33px" Width="275px"> 
-                                    <asp:ListItem>  </asp:ListItem>
-                                </asp:DropDownList>
-                                <asp:RequiredFieldValidator ID="RFVDept" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="DDLDept"></asp:RequiredFieldValidator>
-                            </div>
-                        </div>
-                            <div class="form-group">
-                                <asp:Label ID="Label1" runat="server">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:Label>
-                                <asp:Label ID="LblCCode" runat="server" Text="Course Code:"></asp:Label>
-                                <asp:TextBox ID="txtCCode" runat="server" Width="210px"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RFVCCode" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtCCode"></asp:RequiredFieldValidator>
-                            </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <asp:Label ID="LblCName" runat="server" Text="Course :"></asp:Label>
-                                <asp:TextBox ID="txtCName" runat="server" Width="369px"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RFVName" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtCName"></asp:RequiredFieldValidator>
-                            </div>
-                        </div>
-                      </div> 
-                 <br />
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <asp:Label ID="LblYrLvl" runat="server" Text="Year Level:"></asp:Label>
-                                <asp:DropDownList ID="DDLYrLvl" runat="server" Width="267px" Height="27px">
-                                    <asp:ListItem>  </asp:ListItem>
-                                </asp:DropDownList>
-                                <asp:RequiredFieldValidator ID="RFVYrLvl" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="DDLYrLvl"></asp:RequiredFieldValidator>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <asp:Label ID="LblSsem" runat="server" Text="Semester:"></asp:Label>
-                                <asp:TextBox ID="txtSem" runat="server" Width="268px"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RFVSem" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtSem"></asp:RequiredFieldValidator>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <asp:Label ID="LblSched" runat="server" Text="Schedule:"></asp:Label>
-                                <asp:DropDownList ID="DDLSched" runat="server" Width="267px" Height="25px">
-                                    <asp:ListItem></asp:ListItem>
-                                </asp:DropDownList>
-                                <asp:RequiredFieldValidator ID="RFVSched" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="DDLSched"></asp:RequiredFieldValidator>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-4">
-                        <div class="form-group">
-                            <asp:Label ID="LblAcadYr" runat="server">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Academic Year:</asp:Label>
-                            <asp:DropDownList ID="DDLAcadYr" runat="server" Height="39px" Width="600px">
-                                 <asp:ListItem> Select </asp:ListItem>
-                            </asp:DropDownList>
-                            <asp:RequiredFieldValidator ID="RFVAcadYr" runat="server" ErrorMessage="*" InitialValue="Select" ControlToValidate="DDLAcadYr" CssClass="auto-style1"></asp:RequiredFieldValidator>
-                        </div>
-                    </div>
-                  </div> 
-             </fieldset>
-         </div>
+        </div>
         <br />
-        <div class="card-footer text-center">
+    </section>
+
+    <section>
+        <div class="card">
+              <fieldset>
+                  <legend style="text-align:left">&nbsp; ADDRESS</legend>
+                  <h4 style="text-align:left;">&nbsp;Permanent Address</h4>
+                     <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <asp:Label ID="LblBrngy" runat="server" Text="Barangay:"></asp:Label>
+                                <asp:TextBox ID="txtBrngy" runat="server" Width="268px"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RFVBrngy" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtBrngy"></asp:RequiredFieldValidator>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <asp:Label ID="LblMun" runat="server" Text="Municipality/City:"></asp:Label>
+                                <asp:TextBox ID="txtMun" runat="server" Width="268px"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RFVMun" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtMun"></asp:RequiredFieldValidator>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <asp:Label ID="LblProvince" runat="server" Text="Province:"></asp:Label>
+                                <asp:TextBox ID="txtProvince" runat="server" Width="268px"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RFVProvince" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtProvince"></asp:RequiredFieldValidator>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <asp:Label ID="Lblcode" runat="server" Text="Zip Code:"></asp:Label>
+                                <asp:TextBox ID="txtCode" runat="server" Width="199px"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RFVCode" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtCode"></asp:RequiredFieldValidator>
+                            </div>
+                        </div>
+                    </div>
+                      <h4 style="text-align:left;">&nbsp; Present Address</h4>
+                  <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <asp:Label ID="LblPBrngy" runat="server" Text="Barangay:"></asp:Label>
+                                <asp:TextBox ID="txtPBrngy" runat="server" Width="268px"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RFVPBrngy" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtPBrngy"></asp:RequiredFieldValidator>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <asp:Label ID="LblPMun" runat="server" Text="Municipality/City:"></asp:Label>
+                                <asp:TextBox ID="txtPMun" runat="server" Width="268px"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RFVPMun" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtPMun"></asp:RequiredFieldValidator>
+                            </div>
+                        </div>
+                      </div>
+                       <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <asp:Label ID="LblPProvince" runat="server" Text="Province:"></asp:Label>
+                                <asp:TextBox ID="txtPProvince" runat="server" Width="268px"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RFVPProvince" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtPProvince"></asp:RequiredFieldValidator>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <asp:Label ID="LblPCode" runat="server" Text="Zip Code:"></asp:Label>
+                                <asp:TextBox ID="txtPCode" runat="server" Width="199px"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtPCode"></asp:RequiredFieldValidator>
+                            </div>
+                        </div>
+                  </div>
+              </fieldset>
+        </div> <br />
+          <div class="card-footer text-center">
             <div class="form-group">
                 <asp:Button class="btn btn-primary btn-lg" ID="BttnSubmit" runat="server" Text="SAVE" />
                 <asp:Button class="btn btn-primary btn-lg" ID="BttnClear" runat="server" Text="CLEAR" />
             </div>
         </div>
-    </section>
+   </section>
 </asp:Content>

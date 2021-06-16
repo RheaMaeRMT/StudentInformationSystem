@@ -31,15 +31,6 @@ namespace StudentSystem {
         protected global::System.Web.UI.WebControls.TextBox txtIDNo;
         
         /// <summary>
-        /// RFVIDno control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVIDno;
-        
-        /// <summary>
         /// BttnSearch control.
         /// </summary>
         /// <remarks>
@@ -67,15 +58,6 @@ namespace StudentSystem {
         protected global::System.Web.UI.WebControls.TextBox txtFname;
         
         /// <summary>
-        /// RFVFname control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVFname;
-        
-        /// <summary>
         /// LblLName control.
         /// </summary>
         /// <remarks>
@@ -92,15 +74,6 @@ namespace StudentSystem {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtLname;
-        
-        /// <summary>
-        /// RFVLname control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVLname;
         
         /// <summary>
         /// LblMname control.
@@ -121,33 +94,6 @@ namespace StudentSystem {
         protected global::System.Web.UI.WebControls.TextBox txtMname;
         
         /// <summary>
-        /// LblGender control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblGender;
-        
-        /// <summary>
-        /// DDLGender control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DDLGender;
-        
-        /// <summary>
-        /// RFVGender control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVGender;
-        
-        /// <summary>
         /// LblNum control.
         /// </summary>
         /// <remarks>
@@ -164,15 +110,6 @@ namespace StudentSystem {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtNum;
-        
-        /// <summary>
-        /// RFVNum control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVNum;
         
         /// <summary>
         /// LblEmail control.
@@ -193,15 +130,6 @@ namespace StudentSystem {
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
         
         /// <summary>
-        /// RFVEmail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVEmail;
-        
-        /// <summary>
         /// LblBDate control.
         /// </summary>
         /// <remarks>
@@ -220,67 +148,22 @@ namespace StudentSystem {
         protected global::System.Web.UI.WebControls.TextBox txtBDate;
         
         /// <summary>
-        /// RFVBDate control.
+        /// LblProf control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVBDate;
+        protected global::System.Web.UI.WebControls.Label LblProf;
         
         /// <summary>
-        /// LblAddress control.
+        /// txtProf control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblAddress;
-        
-        /// <summary>
-        /// txtAddress control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAddress;
-        
-        /// <summary>
-        /// RFVAddress control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVAddress;
-        
-        /// <summary>
-        /// LblStat control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblStat;
-        
-        /// <summary>
-        /// DDLStat control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DDLStat;
-        
-        /// <summary>
-        /// RFVStat control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVStat;
+        protected global::System.Web.UI.WebControls.TextBox txtProf;
         
         /// <summary>
         /// LblDept control.
@@ -301,22 +184,22 @@ namespace StudentSystem {
         protected global::System.Web.UI.WebControls.DropDownList DDLDept;
         
         /// <summary>
-        /// RFVDept control.
+        /// LblCName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVDept;
+        protected global::System.Web.UI.WebControls.Label LblCName;
         
         /// <summary>
-        /// Label1 control.
+        /// DDLCname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.DropDownList DDLCname;
         
         /// <summary>
         /// LblCCode control.
@@ -328,49 +211,13 @@ namespace StudentSystem {
         protected global::System.Web.UI.WebControls.Label LblCCode;
         
         /// <summary>
-        /// txtCCode control.
+        /// DDLCCode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCCode;
-        
-        /// <summary>
-        /// RFVCCode control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVCCode;
-        
-        /// <summary>
-        /// LblCName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblCName;
-        
-        /// <summary>
-        /// txtCName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCName;
-        
-        /// <summary>
-        /// RFVName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVName;
+        protected global::System.Web.UI.WebControls.DropDownList DDLCCode;
         
         /// <summary>
         /// LblYrLvl control.
@@ -391,15 +238,6 @@ namespace StudentSystem {
         protected global::System.Web.UI.WebControls.DropDownList DDLYrLvl;
         
         /// <summary>
-        /// RFVYrLvl control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVYrLvl;
-        
-        /// <summary>
         /// LblSsem control.
         /// </summary>
         /// <remarks>
@@ -409,22 +247,13 @@ namespace StudentSystem {
         protected global::System.Web.UI.WebControls.Label LblSsem;
         
         /// <summary>
-        /// txtSem control.
+        /// DDLSem control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSem;
-        
-        /// <summary>
-        /// RFVSem control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVSem;
+        protected global::System.Web.UI.WebControls.DropDownList DDLSem;
         
         /// <summary>
         /// LblSched control.
@@ -445,15 +274,6 @@ namespace StudentSystem {
         protected global::System.Web.UI.WebControls.DropDownList DDLSched;
         
         /// <summary>
-        /// RFVSched control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVSched;
-        
-        /// <summary>
         /// LblAcadYr control.
         /// </summary>
         /// <remarks>
@@ -470,15 +290,6 @@ namespace StudentSystem {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DDLAcadYr;
-        
-        /// <summary>
-        /// RFVAcadYr control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVAcadYr;
         
         /// <summary>
         /// BttnSubmit control.

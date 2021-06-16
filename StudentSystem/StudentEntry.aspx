@@ -179,86 +179,37 @@
         <div class="card"> 
             <fieldset>
                 <legend style="text-align:left">&nbsp; EDUCATIONAL BACKGROUND</legend>
-                    <h4 style="text-align:left;">&nbsp;Elementary Education</h4>
+                    <h4 style="text-align:left;">&nbsp;Last School Attended</h4>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="form-group">
-                            <asp:Label ID="LblELem" runat="server" Text="School Name:"></asp:Label>
-                            <asp:TextBox ID="txtElem" runat="server" Width="285px"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RFVElem" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtElem"></asp:RequiredFieldValidator>
+                            <asp:Label ID="LblSchool" runat="server" Text="School Name:" Width="200px"></asp:Label>
+                            <asp:TextBox ID="txtSchool" runat="server" Width="285px"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RFVSenior" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtSchool"></asp:RequiredFieldValidator>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <asp:Label ID="LblElemAdd" runat="server" Text="Address:"></asp:Label>
-                            <asp:TextBox ID="txtElemAd" runat="server" placeholder="Barangay,Municipality,Province" Width="285px"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RFVElemAdd" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtElemAd"></asp:RequiredFieldValidator>
+                            <asp:Label ID="LblSchoolAdd" runat="server" Text="Address:" Width="200px"></asp:Label>
+                            <asp:TextBox ID="txtSchoolAdd" runat="server" placeholder="Barangay,Municipality,Province" Width="285px"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RFVSeniorAdd" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtSchoolAdd"> </asp:RequiredFieldValidator>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <asp:Label ID="LblYear" runat="server" Text="Year Graduated:"></asp:Label>
-                            <asp:TextBox ID="txtYear" runat="server" Width="285px"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RFVYear" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtYear"></asp:RequiredFieldValidator>
-                        </div>
-                    </div>
-                </div>
-                    <h4 style="text-align:left;">&nbsp;Secondary Education-Junior High School</h4>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <asp:Label ID="LblSec" runat="server" Text="School Name:"></asp:Label>
-                            <asp:TextBox ID="TxtSec" runat="server" Width="285px"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RFVSec" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="TxtSec"></asp:RequiredFieldValidator>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <asp:Label ID="LblSecAdd" runat="server" Text="Address:"></asp:Label>
-                            <asp:TextBox ID="txtSecAdd" runat="server" placeholder="Barangay,Municipality,Province" Width="285px"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RFVSecAdd" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtSecAdd"> </asp:RequiredFieldValidator>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <asp:Label ID="LblSecYear" runat="server" Text="Year Graduated:"></asp:Label>
-                            <asp:TextBox ID="txtSecYear" runat="server" Width="285px"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RFVSecYear" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtSecYear"></asp:RequiredFieldValidator>
-                        </div>
-                    </div>
-                </div>
-                    <h4 style="text-align:left;">&nbsp;Secondary Education-Senior High School</h4>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <asp:Label ID="LblSenior" runat="server" Text="School Name:"></asp:Label>
-                            <asp:TextBox ID="txtSenior" runat="server" Width="285px"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RFVSenior" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtSenior"></asp:RequiredFieldValidator>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <asp:Label ID="LblSeniorAdd" runat="server" Text="Address:"></asp:Label>
-                            <asp:TextBox ID="txtSeniorAdd" runat="server" placeholder="Barangay,Municipality,Province" Width="285px"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RFVSeniorAdd" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtSeniorAdd"> </asp:RequiredFieldValidator>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <asp:Label ID="LblSeniorYear" runat="server" Text="Year Graduated:"></asp:Label>
-                            <asp:TextBox ID="txtSeniorYear" runat="server" Width="285px"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RFVSeniorYear" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtSeniorYear"></asp:RequiredFieldValidator>
+                            <asp:Label ID="LblGrad" runat="server" Text="Year Graduated:" Width="200px"></asp:Label>
+                            <asp:TextBox ID="txtGrad" runat="server" Width="285px"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RFVGrad" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtGrad"></asp:RequiredFieldValidator>
                         </div>
                     </div> 
                 </div> 
             </fieldset>
         </div>
-        <br />
+       <br />
+    </section><br />
         <div class="card-footer text-center">
             <div class="form-group">
-                <asp:Button class="btn btn-primary btn-lg" ID="BttnSubmit" runat="server" Text="SAVE" />
-                <asp:Button class="btn btn-primary btn-lg" ID="BttnClear" runat="server" Text="CLEAR" />
+                <asp:Button class="btn btn-primary btn-lg" ID="BttnSubmit" runat="server" Text="SAVE" OnClick="BttnSubmit_Click" />
             </div>
         </div>
-    </section>
 </asp:Content>

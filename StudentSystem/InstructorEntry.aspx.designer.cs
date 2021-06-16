@@ -40,15 +40,6 @@ namespace StudentSystem {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVIDno;
         
         /// <summary>
-        /// BttnSearch control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BttnSearch;
-        
-        /// <summary>
         /// LblFname control.
         /// </summary>
         /// <remarks>
@@ -229,33 +220,6 @@ namespace StudentSystem {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVBDate;
         
         /// <summary>
-        /// LblAddress control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblAddress;
-        
-        /// <summary>
-        /// txtAddress control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAddress;
-        
-        /// <summary>
-        /// RFVAddress control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVAddress;
-        
-        /// <summary>
         /// LblStat control.
         /// </summary>
         /// <remarks>
@@ -283,202 +247,220 @@ namespace StudentSystem {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVStat;
         
         /// <summary>
-        /// LblDept control.
+        /// LblBrngy control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblDept;
+        protected global::System.Web.UI.WebControls.Label LblBrngy;
         
         /// <summary>
-        /// DDLDept control.
+        /// txtBrngy control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DDLDept;
+        protected global::System.Web.UI.WebControls.TextBox txtBrngy;
         
         /// <summary>
-        /// RFVDept control.
+        /// RFVBrngy control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVDept;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVBrngy;
         
         /// <summary>
-        /// Label1 control.
+        /// LblMun control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label LblMun;
         
         /// <summary>
-        /// LblCCode control.
+        /// txtMun control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblCCode;
+        protected global::System.Web.UI.WebControls.TextBox txtMun;
         
         /// <summary>
-        /// txtCCode control.
+        /// RFVMun control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCCode;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVMun;
         
         /// <summary>
-        /// RFVCCode control.
+        /// LblProvince control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVCCode;
+        protected global::System.Web.UI.WebControls.Label LblProvince;
         
         /// <summary>
-        /// LblCName control.
+        /// txtProvince control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblCName;
+        protected global::System.Web.UI.WebControls.TextBox txtProvince;
         
         /// <summary>
-        /// txtCName control.
+        /// RFVProvince control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCName;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVProvince;
         
         /// <summary>
-        /// RFVName control.
+        /// Lblcode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVName;
+        protected global::System.Web.UI.WebControls.Label Lblcode;
         
         /// <summary>
-        /// LblYrLvl control.
+        /// txtCode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblYrLvl;
+        protected global::System.Web.UI.WebControls.TextBox txtCode;
         
         /// <summary>
-        /// DDLYrLvl control.
+        /// RFVCode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DDLYrLvl;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVCode;
         
         /// <summary>
-        /// RFVYrLvl control.
+        /// LblPBrngy control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVYrLvl;
+        protected global::System.Web.UI.WebControls.Label LblPBrngy;
         
         /// <summary>
-        /// LblSsem control.
+        /// txtPBrngy control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblSsem;
+        protected global::System.Web.UI.WebControls.TextBox txtPBrngy;
         
         /// <summary>
-        /// txtSem control.
+        /// RFVPBrngy control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSem;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVPBrngy;
         
         /// <summary>
-        /// RFVSem control.
+        /// LblPMun control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVSem;
+        protected global::System.Web.UI.WebControls.Label LblPMun;
         
         /// <summary>
-        /// LblSched control.
+        /// txtPMun control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblSched;
+        protected global::System.Web.UI.WebControls.TextBox txtPMun;
         
         /// <summary>
-        /// DDLSched control.
+        /// RFVPMun control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DDLSched;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVPMun;
         
         /// <summary>
-        /// RFVSched control.
+        /// LblPProvince control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVSched;
+        protected global::System.Web.UI.WebControls.Label LblPProvince;
         
         /// <summary>
-        /// LblAcadYr control.
+        /// txtPProvince control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblAcadYr;
+        protected global::System.Web.UI.WebControls.TextBox txtPProvince;
         
         /// <summary>
-        /// DDLAcadYr control.
+        /// RFVPProvince control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DDLAcadYr;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVPProvince;
         
         /// <summary>
-        /// RFVAcadYr control.
+        /// LblPCode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVAcadYr;
+        protected global::System.Web.UI.WebControls.Label LblPCode;
+        
+        /// <summary>
+        /// txtPCode control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtPCode;
+        
+        /// <summary>
+        /// RequiredFieldValidator3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
         
         /// <summary>
         /// BttnSubmit control.

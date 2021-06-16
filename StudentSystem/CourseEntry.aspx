@@ -6,15 +6,15 @@
             color: #FF0000;
             font-size: large;
         }
-      
+
     </style>
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="BodyContent" runat="server">       
-   <h4 style="text-align:left">COURSE ENTRY</h4>
-    <section class="page-section about-heading">
-        <div class="card"> 
-            <fieldset>
-                 <legend style="text-align:center">COURSE</legend>
+   <h4>COURSE ENTRY</h4> <br />
+  <center>  <section class="page-section about-headingr">
+        <div class="card" style="width:705px"> 
+            <fieldset style="width:700px; text-align:center">
+                 <legend style="text-align:left">&nbsp;COURSE</legend>
                   <div class="row justify-content-center">
                         <div class="col-lg-12"> 
                             <div class="form-group"> 
@@ -224,21 +224,20 @@
                             <asp:Label ID="LblAcadYr" runat="server">Academic Year:</asp:Label>
                             <asp:DropDownList ID="DDLAcadYr" runat="server" Height="39px" Width="600px">
                                  <asp:ListItem> Select </asp:ListItem>
-                                 <asp:ListItem> A.Y 2018-2019</asp:ListItem>
-                                 <asp:ListItem> A.Y 2019-2020</asp:ListItem>
                                  <asp:ListItem> A.Y 2020-2021</asp:ListItem>
+                                 <asp:ListItem> A.Y 2021-2022</asp:ListItem>
                             </asp:DropDownList>
                             <asp:RequiredFieldValidator ID="RFVAcadYr" runat="server" ErrorMessage="*" InitialValue="Select" ControlToValidate="DDLAcadYr" CssClass="auto-style1"></asp:RequiredFieldValidator>
                         </div>
                   </div>
                 </div> 
             </fieldset>
-        </div> <br />
+        </div>  <br />
         <div class="card-footer text-center">
             <div class="form-group">
                 <asp:Button class="btn btn-primary btn-lg" ID="BttnSubmit" runat="server" Text="SAVE" />
-                <asp:Button class="btn btn-primary btn-lg" ID="BttnClear" runat="server" Text="CLEAR" />
             </div>
         </div>
-    </section>
+      </center>
+   </section>
 </asp:Content>

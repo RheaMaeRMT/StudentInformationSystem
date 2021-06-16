@@ -1481,7 +1481,7 @@ a.bg-danger:focus {
 }
 ul,
 ol {
-  margin-top: 0;
+  margin-top: 5px;
   margin-bottom: 10px;
 }
 ul ul,
@@ -1491,11 +1491,14 @@ ol ol {
   margin-bottom: 0;
 }
 li {
-    margin-left: 40px;
-    margin-right: 40px;
-    font-size:larger;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-right: 50px;
+    font-size:large;
     color:DodgerBlue;
+    
 }
+
 
 .list-unstyled {
   padding-left: 0;
@@ -2586,7 +2589,8 @@ label {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 5px;
-  font-weight: bold;
+  font-weight:800;
+  color:black;
 }
 input[type="search"] {
   -webkit-box-sizing: border-box;
@@ -4052,7 +4056,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-    color: #000;
+    color:antiquewhite;
 }
     .nav > li {
         position: relative;
@@ -4061,8 +4065,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     }
     .nav > li > a {
         position: relative;
-        display: block;
-        padding: 10px 15px;
+        display:block;
+        padding: 0px 1px;
         color: #000;
     }
     .nav > li > a:hover,
@@ -4109,7 +4113,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
         margin-right: 2px;
         line-height: 1.42857143;
         border: 1px solid transparent;
-        border-radius: 4px 4px 0 0;
+        border-radius: 2px 2px 0 0;
         color: #000;
     }
 .nav-tabs > li > a:hover {
@@ -4264,8 +4268,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-collapse {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
   overflow-x: visible;
   -webkit-overflow-scrolling: touch;
   border-top: 1px solid transparent;
@@ -4405,12 +4409,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-nav {
-  margin: 7.5px -15px;
+  margin: 5px -10px;
 }
 .navbar-nav > li > a {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  line-height: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 15px;
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
@@ -4445,8 +4449,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
         float: left;
     }
         .navbar-nav > li > a {
-            padding-top: 15px;
-            padding-bottom: 15px;
+            padding-top: 5px;
+            padding-bottom: 10px;
 
         }
 }
@@ -4929,16 +4933,16 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   background-color: #fff;
 }
 .label {
-  display: inline;
-  padding: .2em .6em .3em;
-  font-size: 75%;
-  font-weight: bold;
-  line-height: 1;
-  color: #fff;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: .25em;
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    color: #000000;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
 }
 a.label:hover,
 a.label:focus {

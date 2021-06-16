@@ -36,14 +36,13 @@
                 <div class="navbar-header">
                  <h1>STUDENT &nbsp;INFORMATION &nbsp; SYSTEM</h1>      
                 </div>
-                <div class="navbar-collapse collapse">
+                <div class="navbar-collapse collapse" id="navbarContent">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="Homepage.aspx">HOMEPAGE</a></li>
-                        <li><a runat="server" href="StudentEntry.aspx">STUDENT</a></li>
+                        <li><a runat="server" href="Homepage.aspx">HOME</a></li>                 
+                        <li><a runat="server" href="StudentEntry.aspx">STUDENT</a></li>   
                         <li><a runat="server" href="InstructorEntry.aspx">INSTRUCTOR</a></li>
-                        <li><a runat="server" href="CourseEntry.aspx">COURSE</a></li>
                         <li><a runat="server" href="Enrollment.aspx">ENROLLMENT</a></li>
-
+                        <li><a runat="server" href="CourseEntry.aspx">COURSE</a></li>
                     </ul>
                 </div>
             </div>
