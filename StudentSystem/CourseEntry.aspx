@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CourseEntry.aspx.cs" Inherits="StudentSystem.Contact" %>
+﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CourseEntry.aspx.cs" Inherits="StudentSystem.Contact" Culture="Auto" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
@@ -12,33 +12,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="BodyContent" runat="server">       
    <h4>COURSE ENTRY</h4> <br />
   <center>  <section class="page-section about-headingr">
-        <div class="card" style="width:705px"> 
-            <fieldset style="width:700px; text-align:center">
+        <div class="card" style="width:1005px"> 
+            <fieldset style="width:1000px; text-align:center">
                  <legend style="text-align:left">&nbsp;COURSE</legend>
-                  <div class="row justify-content-center">
-                        <div class="col-lg-12"> 
-                            <div class="form-group"> 
-                                <asp:Label ID="LblDept" runat="server" >&nbsp;&nbsp;College/Dept:</asp:Label>
-                                <asp:DropDownList ID="DDLDept" runat="server" Height="39px" Width="522px">
-                                    <asp:ListItem>Select </asp:ListItem>
-                                    <asp:ListItem>CCICT-COLLEGE OF COMPUTER INFORMATION AND COMMUNICATION TECHNOLOGY</asp:ListItem>
-                                    <asp:ListItem>COE-COLLEGE OF ENGINEERING </asp:ListItem>
-                                    <asp:ListItem>COED-COLLEGE OF EDUCATION </asp:ListItem>
-                                    <asp:ListItem>COT-COLLEGE OF TECHNOLOGY </asp:ListItem>
-                                    <asp:ListItem>CAS-COLLEGE OF ARTS AND SCIENCES </asp:ListItem>
-                                    <asp:ListItem>CME-COLLEGE OF MANAGEMENT AND ENTREPRENEURSHIP </asp:ListItem>
-                                </asp:DropDownList>
-                                <asp:RequiredFieldValidator ID="RFVDept" runat="server" ErrorMessage="*" InitialValue="Select" ControlToValidate="DDLDept" CssClass="auto-style1"></asp:RequiredFieldValidator>
-                            </div>
-                        </div> 
-                    </div>
                    <div class="row">   
                            <div class="col-lg-12">
                             <div class="form-group">
                                 <asp:Label ID="LblCName" runat="server" Width="100px" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Course:</asp:Label>
-                                <asp:DropDownList ID="DDLCname" runat="server" CssClass="auto-style32" Height="39px" Width="600px">
+                                <asp:DropDownList ID="DDLCname" runat="server" CssClass="auto-style32" Height="39px" Width="900px">
                                 <asp:ListItem>Select</asp:ListItem>
-                                <asp:ListItem>**COLLEGE OF COMPUTER INFORMATION AND COMMUNICATION TECHNOLOGY**</asp:ListItem>                   
+                                <asp:ListItem>**COLLEGE OF COMPUTER INFORMATION and COMMUNICATION TECHNOLOGY  </asp:ListItem>                 
                                 <asp:ListItem>BIT Major in Computer Technology</asp:ListItem>
                                 <asp:ListItem>BS in Information Technology</asp:ListItem>
                                 <asp:ListItem>BS in Information Systems </asp:ListItem>
@@ -108,7 +91,7 @@
                            <div class="col-lg-12">
                             <div class="form-group">
                                 <asp:Label ID="LblCode" runat="server" >&nbsp;Course Code:</asp:Label>
-                                <asp:DropDownList ID="DropDownList1" runat="server" Height="39px" Width="522px">
+                                <asp:DropDownList ID="DDLCode" runat="server" Height="39px" Width="522px">
                                    <asp:ListItem>Select</asp:ListItem>
                                 <asp:ListItem>**COLLEGE OF COMPUTER INFORMATION AND COMMUNICATION TECHNOLOGY**</asp:ListItem>                   
                                 <asp:ListItem>BIT-CT</asp:ListItem>
@@ -172,70 +155,15 @@
                                 <asp:ListItem>BSTM </asp:ListItem>
                                 <asp:ListItem>BSHM</asp:ListItem>
                                 </asp:DropDownList>
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*" InitialValue="Select" ControlToValidate="DDLDept" CssClass="auto-style1"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="RFVCode" runat="server" ErrorMessage="*" InitialValue="Select" ControlToValidate="DDLCode" CssClass="auto-style1"></asp:RequiredFieldValidator>
                             </div>
                         </div>     
                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="form-group">
-                                <asp:Label ID="LblYrLvl" runat="server" Width="100px">&nbsp;&nbsp;Year Level:</asp:Label>
-                                <asp:DropDownList ID="DDLYrLvl" runat="server" Width="615px" Height="37px">
-                                    <asp:ListItem> Select </asp:ListItem>
-                                    <asp:ListItem> 1st Year</asp:ListItem>
-                                    <asp:ListItem> 2nd Year</asp:ListItem>
-                                    <asp:ListItem> 3rd Year</asp:ListItem>
-                                    <asp:ListItem> 4th Year</asp:ListItem>
-                                    <asp:ListItem> 5th Year</asp:ListItem>
-                                </asp:DropDownList>
-                               <asp:RequiredFieldValidator ID="RFVYrLvl" runat="server" ErrorMessage="*" InitialValue="Select" ControlToValidate="DDLYrLvl" CssClass="auto-style1"></asp:RequiredFieldValidator>
-                            </div>
-                        </div>
-                      </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="form-group">
-                                <asp:Label ID="LblSsem" runat="server" Width="100px">&nbsp;&nbsp;Semester:</asp:Label>
-                                <asp:DropDownList ID="DDLSem" runat="server" Width="649px" Height="39px">
-                                    <asp:ListItem>Select</asp:ListItem>
-                                    <asp:ListItem> First Semester</asp:ListItem>
-                                    <asp:ListItem> Second Semester</asp:ListItem>
-                                </asp:DropDownList>
-                                <asp:RequiredFieldValidator ID="RFVSem" runat="server" ErrorMessage="*" InitialValue="Select" ControlToValidate="DDLSem" CssClass="auto-style1"></asp:RequiredFieldValidator>
-                            </div>
-                        </div>
-                        </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="form-group">
-                                <asp:Label ID="LblSched" runat="server" Width="100px">&nbsp;&nbsp;Schedule:</asp:Label>
-                                <asp:DropDownList ID="DDLSched" runat="server" Width="630px" Height="39px">
-                                    <asp:ListItem> Select </asp:ListItem>
-                                    <asp:ListItem> Day</asp:ListItem>
-                                    <asp:ListItem> Evening</asp:ListItem>
-                                </asp:DropDownList>
-                                <asp:RequiredFieldValidator ID="RFVSched" runat="server" ErrorMessage="*" InitialValue="Select" ControlToValidate="DDLSched" CssClass="auto-style1"></asp:RequiredFieldValidator>
-                            </div>
-                        </div>
-                    </div>
-                <div class="row">
-                       <div class="col-lg-12">
-                        <div class="form-group">
-                            <asp:Label ID="LblAcadYr" runat="server">Academic Year:</asp:Label>
-                            <asp:DropDownList ID="DDLAcadYr" runat="server" Height="39px" Width="600px">
-                                 <asp:ListItem> Select </asp:ListItem>
-                                 <asp:ListItem> A.Y 2020-2021</asp:ListItem>
-                                 <asp:ListItem> A.Y 2021-2022</asp:ListItem>
-                            </asp:DropDownList>
-                            <asp:RequiredFieldValidator ID="RFVAcadYr" runat="server" ErrorMessage="*" InitialValue="Select" ControlToValidate="DDLAcadYr" CssClass="auto-style1"></asp:RequiredFieldValidator>
-                        </div>
-                  </div>
-                </div> 
             </fieldset>
         </div>  <br />
         <div class="card-footer text-center">
             <div class="form-group">
-                <asp:Button class="btn btn-primary btn-lg" ID="BttnSubmit" runat="server" Text="SAVE" />
+                <asp:Button class="btn btn-primary btn-lg" ID="BttnSubmit" runat="server" OnClick="BttnSubmit_Click" Text="SAVE" />
             </div>
         </div>
       </center>

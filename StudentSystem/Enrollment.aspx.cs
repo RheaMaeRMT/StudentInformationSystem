@@ -44,6 +44,7 @@ namespace StudentSystem
 
         protected void BttnSearch_Click(object sender, EventArgs e)
         {
+
             string IDNo = txtIDNo.Text;
 
             try

@@ -1,7 +1,6 @@
 ﻿<%@ Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Homepage.aspx.cs" Inherits="StudentSystem.About" %>
 
 <asp:Content ID="Content" ContentPlaceHolderID="head" runat="server">
-
 </asp:Content>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="BodyContent" runat="server"> 
     <section style="background-color:transparent">
@@ -16,5 +15,6 @@
               </div>
             </div>
         </div>
+    <asp:Button class="btn btn-primary btn-lg" ID="BttnLogout" runat="server" Text="LOGOUT" OnClick="BttnLogout_Click" />
     </section>
 </asp:Content>

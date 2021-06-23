@@ -35,7 +35,7 @@
         <div class="card-footer text-center">
             <div class="form-group">
                 <asp:Button class="btn btn-primary btn-lg" ID="BttnSubmit" runat="server" Text="LOGIN" OnClick="BttnSubmit_Click" />
-                <div class="small"><a href="signup.aspx">Need an account? Sign up!</a></div>
+                <div class="btn-lg"><a style="color:black" href="signup.aspx">Create Account</a></div>
             </div>
         </div>
       </center>

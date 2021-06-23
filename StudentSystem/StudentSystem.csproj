@@ -123,6 +123,7 @@
     <Content Include="App_Data\StudentDB_log.ldf">
       <DependentUpon>StudentDB.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\w3.css" />
     <Content Include="Enrollment.aspx" />
     <Content Include="Homepage.aspx" />
     <Content Include="CourseEntry.aspx" />

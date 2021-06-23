@@ -13,8 +13,17 @@ namespace StudentSystem
         {
             if (Session["username"] == null)
             {
-                Response.Redirect("Login.aspx");
+                Response.Redirect("Signup.aspx");
             }
+        }
+        protected void BttnLogout_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Session.RemoveAll();
+            Session["username"] = null;
+            Session["pass"] = null;
+            Session.Clear();
+            Response.Redirect("Login.aspx");
         }
     }
 }

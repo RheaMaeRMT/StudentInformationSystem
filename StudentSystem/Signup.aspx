@@ -61,6 +61,9 @@
         <div class="card-footer text-center">
             <div class="form-group">
                 <asp:Button class="btn btn-primary btn-lg" ID="BttnSignup" runat="server" Text="SIGNUP" OnClick="BttnSignup_Click" />
+                <div class="btn-lg">
+                    <a href="Login.aspx" style="color:black"> Log-in</a>
+                </div>
             </div>
         </div>
       </center>
