@@ -3,18 +3,12 @@
 <asp:Content ID="Content" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="BodyContent" runat="server"> 
-    <section style="background-color:transparent">
-        <div class="card">
-            <div class="row">
-             <div class="form-group">
-                 <h3 style="text-align:center"> A management information system for education establishments that is used to manage student data . 
-                         <br />This system provide capabilities for registering students in courses;
-                         <br /> Updating Students Information and Data;
-                         <br /> and managing other student-related data needs.
-                </h3>
-              </div>
-            </div>
-        </div>
-    <asp:Button class="btn btn-primary btn-lg" ID="BttnLogout" runat="server" Text="LOGOUT" OnClick="BttnLogout_Click" />
-    </section>
+      <section class="page-section about-heading" style="background-color:transparent;margin-left:40px">
+        <div class="card" style="width:1005px; margin-left:40px;"> 
+            <fieldset style="width:1000px; text-align:center">
+                 <h2 style="font-family:'Agency FB';text-align:center;margin-left:30px;width:1000px;font-size:50px"> STUDENT INFORMATION SYSTEM </h2>              
+            </fieldset>
+        </div>  <br />
+        <asp:Button class="btn btn-primary btn-lg" ID="BttnLogout" runat="server" Text="LOG OUT" OnClick="BttnLogout_Click"/>
+   </section>
 </asp:Content>

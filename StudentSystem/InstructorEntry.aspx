@@ -7,9 +7,6 @@
         .auto-style1 {
             color: #FF0000;
         }
-        .auto-style2 {
-            margin-left:10px;
-        }
         </style>
 
 </asp:Content>
@@ -17,14 +14,14 @@
         
     <h4>INSTRUCTOR ENTRY</h4>
     <br />
-    <section>
-        <div class="card">
-            <fieldset>
+    <section style="background-color:transparent">
+        <div class="card" style="background-color:transparent">
+            <fieldset >
                <legend style="text-align:left">&nbsp;INSTRUCTOR INFORMATION</legend>
                    <div class="row"> 
                     <div class="col-md-4"> 
                         <div class="form-group">
-                            <asp:Label ID="LblIDNo" runat="server" Text="ID Number:"></asp:Label>
+                            <asp:Label ID="LblIDNo" runat="server" Text="ID:"></asp:Label>
                             <asp:TextBox ID="txtIDNo" runat="server" Width="267px" Height="28px"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RFVIDno" runat="server" ErrorMessage="*" ControlToValidate="txtIDNo" CssClass="auto-style1" ></asp:RequiredFieldValidator>                        
                         </div>
@@ -33,18 +30,11 @@
                 <div class="row"> 
                     <div class="col-md-4"> 
                         <div class="form-group">
-                            <asp:Label ID="LblFname" runat="server" Text="First Name:"></asp:Label>
-                            <asp:TextBox ID="txtFname" runat="server" Width="267px"></asp:TextBox>
+                            <asp:Label ID="LblFname" runat="server" Text="Name:"></asp:Label>
+                            <asp:TextBox ID="txtFname" runat="server" Width="267px" PlaceHolder="Firstname Lastname"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RFVFname" runat="server" ErrorMessage="*" ControlToValidate="txtFname" CssClass="auto-style1"></asp:RequiredFieldValidator>                            
 
                         </div>
-                    </div>
-                    <div class="col-md-4"> 
-                         <div class="form-group"> 
-                             <asp:Label ID="LblLName" runat="server" Text="Last Name:"></asp:Label>
-                             <asp:TextBox ID="txtLname" runat="server" Width="267px"></asp:TextBox>
-                             <asp:RequiredFieldValidator ID="RFVLname" runat="server" ErrorMessage="*" ControlToValidate="txtLname" CssClass="auto-style1"></asp:RequiredFieldValidator>
-                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
@@ -106,43 +96,10 @@
         <br />
     </section>
 
-    <section>
+    <section style="background-color:transparent">
         <div class="card">
               <fieldset>
                   <legend style="text-align:left">&nbsp; ADDRESS</legend>
-                  <h4 style="text-align:left;">&nbsp;Permanent Address</h4>
-                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <asp:Label ID="LblBrngy" runat="server" Text="Barangay:"></asp:Label>
-                                <asp:TextBox ID="txtBrngy" runat="server" Width="268px"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RFVBrngy" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtBrngy"></asp:RequiredFieldValidator>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <asp:Label ID="LblMun" runat="server" Text="Municipality/City:"></asp:Label>
-                                <asp:TextBox ID="txtMun" runat="server" Width="268px"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RFVMun" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtMun"></asp:RequiredFieldValidator>
-                            </div>
-                        </div>
-                       </div>
-                       <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <asp:Label ID="LblProvince" runat="server" Text="Province:"></asp:Label>
-                                <asp:TextBox ID="txtProvince" runat="server" Width="268px"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RFVProvince" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtProvince"></asp:RequiredFieldValidator>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <asp:Label ID="Lblcode" runat="server" Text="Zip Code:"></asp:Label>
-                                <asp:TextBox ID="txtCode" runat="server" Width="199px"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RFVCode" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtCode"></asp:RequiredFieldValidator>
-                            </div>
-                        </div>
-                    </div>
                       <h4 style="text-align:left;">&nbsp; Present Address</h4>
                   <div class="row">
                         <div class="col-md-4">
@@ -178,11 +135,17 @@
                   </div>
               </fieldset>
         </div> <br />
-          <div class="card-footer text-center">
+          <div class="card-footer text-center" style="background-color:transparent">
             <div class="form-group">
-                <asp:Button class="btn btn-primary btn-lg" ID="BttnSubmit" runat="server" Text="SAVE" />
-                <asp:Button class="btn btn-primary btn-lg" ID="BttnClear" runat="server" Text="CLEAR" />
+                <asp:Button class="btn btn-primary btn-lg" ID="BttnSubmit" runat="server" Text="SAVE" OnClick="BttnSubmit_Click" />
             </div>
-        </div>
+              <div>
+                   <a style="color:black;font-size:20px" href="InstructorReport.aspx">View List of Instructors</a> <br />
+                 <a style="color:black;font-size:22px"  href="Homepage.aspx">Home</a>                 
+
+              </div>
+                
+          </div>
+
    </section>
 </asp:Content>

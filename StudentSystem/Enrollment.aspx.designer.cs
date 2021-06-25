@@ -157,31 +157,13 @@ namespace StudentSystem {
         protected global::System.Web.UI.WebControls.Label LblProf;
         
         /// <summary>
-        /// txtProf control.
+        /// DDLInstructor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtProf;
-        
-        /// <summary>
-        /// LblDept control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblDept;
-        
-        /// <summary>
-        /// DDLDept control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DDLDept;
+        protected global::System.Web.UI.WebControls.DropDownList DDLInstructor;
         
         /// <summary>
         /// LblCName control.
@@ -200,24 +182,6 @@ namespace StudentSystem {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DDLCname;
-        
-        /// <summary>
-        /// LblCCode control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblCCode;
-        
-        /// <summary>
-        /// DDLCCode control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DDLCCode;
         
         /// <summary>
         /// LblYrLvl control.
@@ -292,6 +256,24 @@ namespace StudentSystem {
         protected global::System.Web.UI.WebControls.DropDownList DDLAcadYr;
         
         /// <summary>
+        /// LblStat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblStat;
+        
+        /// <summary>
+        /// DDLStat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DDLStat;
+        
+        /// <summary>
         /// BttnSubmit control.
         /// </summary>
         /// <remarks>
@@ -299,14 +281,5 @@ namespace StudentSystem {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BttnSubmit;
-        
-        /// <summary>
-        /// BttnClear control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BttnClear;
     }
 }

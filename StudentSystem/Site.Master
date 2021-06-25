@@ -9,6 +9,8 @@
     <title><%: Page.Title %> Student Information System</title>
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />   
+    
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <asp:ContentPlaceHolder ID="head" runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -16,7 +18,7 @@
 
     <style>
         body{
-            background-color:#8cdd92;
+    background-image: url('../images/bg.jpg');
         }
         h1{
             text-align:center;
@@ -39,10 +41,10 @@
                 <div class="navbar-collapse collapse" id="navbarContent">
                     <ul class="nav navbar-nav"> 
                         <li><a runat="server" href="Homepage.aspx">HOME</a></li>                 
-                        <li><a runat="server" href="StudentEntry.aspx">STUDENT</a></li>   
-                        <li><a runat="server" href="InstructorEntry.aspx">INSTRUCTOR</a></li>
+                        <li><a runat="server" href="StudentReport.aspx">STUDENT</a></li>   
+                        <li><a runat="server" href="InstructorReport.aspx">INSTRUCTOR</a></li>
                         <li><a runat="server" href="Enrollment.aspx">ENROLLMENT</a></li>
-                        <li><a runat="server" href="CourseEntry.aspx">COURSES</a></li>
+                        <li><a runat="server" href="CourseReport.aspx">COURSES</a></li>
                     </ul>
                 </div>
             </div>

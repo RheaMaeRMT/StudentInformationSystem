@@ -24,7 +24,7 @@ menu,
 section,
 summary {
     display: block;
-    background-color: #8cdd92;
+    background-color: transparent;
 }
 footer{
     padding-left:100px;
@@ -32,7 +32,7 @@ footer{
     background-color:transparent;
 }
 .card-footer {
-    background-color: #8cdd92;
+    background-color: transparent;
 }
 h4 {
     text-align: center;
@@ -220,14 +220,14 @@ fieldset {
     padding: .35em .625em .75em;
     margin: 0 2px;
     border: 1px solid #000000;
-    background-color:#f6f498;
+    background-color:transparent;
     text-align:center;
 }
 
 legend {
     padding: 2px;
     border: 2px dotted red;
-    background-color: #f6f498;
+    background-color: transparent;
 }
 textarea {
   overflow: auto;

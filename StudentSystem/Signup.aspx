@@ -6,7 +6,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="BodyContent" runat="server">       
     <center>
-      <section class="page-section about-headingr">
+      <section class="page-section about-heading" style="background-color:transparent">
         <div class="card" style="width:605px"> 
             <fieldset style="width:600px; text-align:center">
                  <legend style="text-align:center">&nbsp;SIGN UP</legend>
@@ -58,11 +58,11 @@
                 </div> 
             </fieldset>
         </div>  <br />
-        <div class="card-footer text-center">
+        <div class="card-footer text-center" style="background-color:transparent">
             <div class="form-group">
                 <asp:Button class="btn btn-primary btn-lg" ID="BttnSignup" runat="server" Text="SIGNUP" OnClick="BttnSignup_Click" />
                 <div class="btn-lg">
-                    <a href="Login.aspx" style="color:black"> Log-in</a>
+                    <a href="Login.aspx" style="color:black;font-size:20px"> Log-in</a>
                 </div>
             </div>
         </div>

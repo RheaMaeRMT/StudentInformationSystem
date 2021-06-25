@@ -124,6 +124,7 @@
       <DependentUpon>StudentDB.mdf</DependentUpon>
     </Content>
     <Content Include="Content\w3.css" />
+    <Content Include="CourseReport.aspx" />
     <Content Include="Enrollment.aspx" />
     <Content Include="Homepage.aspx" />
     <Content Include="CourseEntry.aspx" />
@@ -145,8 +146,11 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="images\Banner.png" />
+    <Content Include="images\bg.jpg" />
     <Content Include="InstructorEntry.aspx" />
+    <Content Include="InstructorReport.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="Reports.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -178,6 +182,7 @@
     <Content Include="Signup.aspx" />
     <Content Include="Site.Master" />
     <Content Include="StudentEntry.aspx" />
+    <Content Include="StudentReport.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -185,6 +190,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="CourseReport.aspx.cs">
+      <DependentUpon>CourseReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CourseReport.aspx.designer.cs">
+      <DependentUpon>CourseReport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Enrollment.aspx.cs">
       <DependentUpon>Enrollment.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -217,6 +229,13 @@
     <Compile Include="InstructorEntry.aspx.designer.cs">
       <DependentUpon>InstructorEntry.aspx</DependentUpon>
     </Compile>
+    <Compile Include="InstructorReport.aspx.cs">
+      <DependentUpon>InstructorReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InstructorReport.aspx.designer.cs">
+      <DependentUpon>InstructorReport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -225,6 +244,13 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports.aspx.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports.aspx.designer.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Signup.aspx.cs">
       <DependentUpon>Signup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -252,6 +278,13 @@
     </Compile>
     <Compile Include="StudentEntry.aspx.designer.cs">
       <DependentUpon>StudentEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentReport.aspx.cs">
+      <DependentUpon>StudentReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentReport.aspx.designer.cs">
+      <DependentUpon>StudentReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

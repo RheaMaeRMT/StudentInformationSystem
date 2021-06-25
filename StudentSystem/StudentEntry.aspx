@@ -9,11 +9,10 @@
         </style>
 
 </asp:Content>
-<asp:Content ID="Content1" ContentPlaceHolderID="BodyContent" runat="server"> 
-        
+<asp:Content ID="Content1" ContentPlaceHolderID="BodyContent" runat="server">       
     <h4>STUDENT ENTRY</h4>
     <br />
-    <section>
+    <section style="background-color:transparent">
         <div class="card">
             <fieldset>
                <legend style="text-align:left">&nbsp;PERSONAL INFORMATION</legend>
@@ -105,39 +104,6 @@
         <div class="card">
               <fieldset>
                   <legend style="text-align:left">&nbsp; ADDRESS</legend>
-                  <h4 style="text-align:left;">&nbsp;Permanent Address</h4>
-                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <asp:Label ID="LblBrngy" runat="server" Text="Barangay:"></asp:Label>
-                                <asp:TextBox ID="txtBrngy" runat="server" Width="268px"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RFVBrngy" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtBrngy"></asp:RequiredFieldValidator>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <asp:Label ID="LblMun" runat="server" Text="Municipality/City:"></asp:Label>
-                                <asp:TextBox ID="txtMun" runat="server" Width="268px"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RFVMun" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtMun"></asp:RequiredFieldValidator>
-                            </div>
-                        </div>
-                       </div>
-                       <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <asp:Label ID="LblProvince" runat="server" Text="Province:"></asp:Label>
-                                <asp:TextBox ID="txtProvince" runat="server" Width="268px"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RFVProvince" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtProvince"></asp:RequiredFieldValidator>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <asp:Label ID="Lblcode" runat="server" Text="Zip Code:"></asp:Label>
-                                <asp:TextBox ID="txtCode" runat="server" Width="199px"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RFVCode" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtCode"></asp:RequiredFieldValidator>
-                            </div>
-                        </div>
-                    </div>
                       <h4 style="text-align:left;">&nbsp; Present Address</h4>
                   <div class="row">
                         <div class="col-md-4">
@@ -175,41 +141,15 @@
         </div>
     </section>
     <br />
-    <section>
-        <div class="card"> 
-            <fieldset>
-                <legend style="text-align:left">&nbsp; EDUCATIONAL BACKGROUND</legend>
-                    <h4 style="text-align:left;">&nbsp;Last School Attended</h4>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <asp:Label ID="LblSchool" runat="server" Text="School Name:" Width="200px"></asp:Label>
-                            <asp:TextBox ID="txtSchool" runat="server" Width="285px"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RFVSenior" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtSchool"></asp:RequiredFieldValidator>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <asp:Label ID="LblSchoolAdd" runat="server" Text="Address:" Width="200px"></asp:Label>
-                            <asp:TextBox ID="txtSchoolAdd" runat="server" placeholder="Barangay,Municipality,Province" Width="285px"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RFVSeniorAdd" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtSchoolAdd"> </asp:RequiredFieldValidator>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <asp:Label ID="LblGrad" runat="server" Text="Year Graduated:" Width="200px"></asp:Label>
-                            <asp:TextBox ID="txtGrad" runat="server" Width="285px"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RFVGrad" runat="server" ErrorMessage="*" CssClass="auto-style1" ControlToValidate="txtGrad"></asp:RequiredFieldValidator>
-                        </div>
-                    </div> 
-                </div> 
-            </fieldset>
-        </div>
-       <br />
-    </section><br />
-        <div class="card-footer text-center">
+    <br />
+        <div class="card-footer text-center" style="background-color:transparent">
             <div class="form-group">
-                <asp:Button class="btn btn-primary btn-lg" ID="BttnSubmit" runat="server" Text="SAVE" OnClick="BttnSubmit_Click" />
+                <asp:Button class="btn btn-primary btn-lg" ID="BttnSubmit" runat="server" Text="SAVE" OnClick="BttnSubmit_Click" /> <br />
             </div>
+            <div class="btn-lg">
+                <a style="color:black;font-size:22px"  href="StudentReport.aspx">View List of Students</a> <br />
+                <a style="color:black;font-size:22px"  href="Homepage.aspx">Home</a>
+            </div> 
+
         </div>
 </asp:Content>

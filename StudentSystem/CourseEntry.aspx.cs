@@ -14,12 +14,13 @@ namespace StudentSystem
     public partial class Contact : Page
     {
         string conn = ConfigurationManager.ConnectionStrings["StudentDB"].ConnectionString;
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*if (Session["username"] == null)
+            if (Session["username"] == null)
             {
                 Response.Redirect("Login.aspx");
-            }*/
+            } 
 
           
         }
@@ -50,6 +51,8 @@ namespace StudentSystem
                         if (ctr >= 1)
                         {
                             Response.Write("<script>alert ('COURSE ADDED!')</script>");
+                            Response.Redirect("CourseReport.aspx");
+                            ClearScreen();
                         }
                     }
                 }
@@ -58,6 +61,20 @@ namespace StudentSystem
             {
                 Response.Write("<script>alert ('Something went wrong, Please Try Again.')</script><pre>" + ex.ToString() + "</pre>");
             }
+        }
+        public void ClearScreen()
+        {
+            DDLCname.SelectedValue= "";
+            DDLCode.SelectedValue = "" ;
+        }
+        protected void BttnCourseReport_Click(object sender, EventArgs e)
+        {
+           if (Session["username"] == null)
+           {
+               Response.Redirect("Login.aspx");
+           } 
+            
+            Response.Redirect("CourseReport.aspx");
         }
     }
 }

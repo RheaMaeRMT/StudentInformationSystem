@@ -15,11 +15,11 @@ namespace StudentSystem
         string conn = ConfigurationManager.ConnectionStrings["StudentDB"].ConnectionString;
 
         protected void Page_Load(object sender, EventArgs e)
-        {
+        { 
             if (Session["username"] == null)
             {
                 Response.Redirect("Login.aspx");
-            }
+            } 
         }
 
         protected void BttnSubmit_Click(object sender, EventArgs e)
@@ -33,17 +33,11 @@ namespace StudentSystem
             string email = txtEmail.Text;
             string bdate = txtBDate.Text;
             string status = DDLStat.SelectedValue;
-            string PerBrngy = txtBrngy.Text;
-            string PerCity = txtMun.Text;
-            string PerProvince = txtProvince.Text;
-            string PerCode = txtPCode.Text;
             string PreBrngy = txtPBrngy.Text;
             string PreCity = txtPMun.Text;
             string PreProvince = txtPProvince.Text;
             string PreCode = txtPCode.Text;
-            string School = txtSchool.Text;
-            string SchlAdd = txtSchoolAdd.Text;
-            string Graduated = txtGrad.Text;
+
 
             try
             {
@@ -53,7 +47,7 @@ namespace StudentSystem
                     using (var cmd = db.CreateCommand())
                     {
                         cmd.CommandType = CommandType.Text;
-                        cmd.CommandText = "INSERT INTO STUD_TABLE (STU_ID,STU_FNAME,STU_MNAME,STU_LNAME,STU_PHONE,STU_GENDER,STU_EMAIL,STU_STATUS,STU_BDATE,STU_PerBrngy,STU_PerCity,STU_PerProvince,STU_PerCode,STU_PreBrngy,STU_PreCity,STU_PreProvince,STU_PreCode,STU_SchlName,STU_SchlAdd,STU_SchlYear)"
+                        cmd.CommandText = "INSERT INTO STUD_TABLE (STU_ID,STU_FNAME,STU_MNAME,STU_LNAME,STU_PHONE,STU_GENDER,STU_EMAIL,STU_STATUS,STU_BDATE,STU_PreBrngy,STU_PreCity,STU_PreProvince,STU_PreCode)"
                                             + "VALUES("
                                             + "@ID,"
                                             + "@fname,"
@@ -64,17 +58,10 @@ namespace StudentSystem
                                             + "@Email,"
                                             + "@status,"
                                             + "@BDate,"
-                                            + "@PerBrngy,"
-                                            + "@PerCity,"
-                                            + "@PerProvince,"
-                                            + "@PerCode,"
                                             + "@PreBrngy,"
                                             + "@PreCity,"
                                             + "@PreProvince,"
-                                            + "@PreCode,"
-                                            + "@School,"
-                                            + "@SchlAdd,"
-                                            + "@SchlGrad)";
+                                            + "@PreCode)";
 
                         cmd.Parameters.AddWithValue("@ID", txtIDNo.Text);
                         cmd.Parameters.AddWithValue("@fname", txtFname.Text);
@@ -85,23 +72,17 @@ namespace StudentSystem
                         cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
                         cmd.Parameters.AddWithValue("@status", DDLStat.SelectedValue);
                         cmd.Parameters.AddWithValue("@BDate", txtBDate.Text);
-                        cmd.Parameters.AddWithValue("@PerBrngy", txtBrngy.Text);
-                        cmd.Parameters.AddWithValue("@PerCity", txtMun.Text);
-                        cmd.Parameters.AddWithValue("@PerProvince", txtProvince.Text);
-                        cmd.Parameters.AddWithValue("@PerCode", txtPCode.Text);
                         cmd.Parameters.AddWithValue("@PreBrngy", txtPBrngy.Text);
                         cmd.Parameters.AddWithValue("@PreCity", txtPMun.Text);
                         cmd.Parameters.AddWithValue("@PreProvince", txtPProvince.Text);
                         cmd.Parameters.AddWithValue("@PreCode", txtPCode.Text);
-                        cmd.Parameters.AddWithValue("@School", txtSchool.Text);
-                        cmd.Parameters.AddWithValue("@SchlAdd", txtSchoolAdd.Text);
-                        cmd.Parameters.AddWithValue("@SchlGrad", txtGrad.Text);
+
 
                         var ctr = cmd.ExecuteNonQuery();
 
                         if (ctr >= 1)
                         {
-                            Response.Write("<script>alert ('Records SAVED')</script>");
+                            Response.Write("<script>alert ('Records SAVED ! New Student Added')</script>");
                             ClearScreen();
                         }
                     } // db close
@@ -126,17 +107,13 @@ namespace StudentSystem
             txtEmail.Text = "";
             DDLStat.SelectedValue="";
             txtBDate.Text = "";
-            txtBrngy.Text = "";
-            txtMun.Text = "";
-            txtProvince.Text = "";
             txtPCode.Text = "";
             txtPBrngy.Text = "";
             txtPMun.Text = "";
             txtPProvince.Text = "";
             txtPCode.Text = "";
-            txtSchool.Text = "";
-            txtSchoolAdd.Text = "";
-            txtGrad.Text = "";
+
         }
+
     }
 }
